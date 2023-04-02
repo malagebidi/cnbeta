@@ -1,0 +1,201 @@
+/*!
+Theme Name: cnBeta
+Theme URI: https://19840906.com/
+Author: DY
+Author URI: https://19840906.com/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cnbeta
+Tags: custom-logo, featured-images
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+cnBeta is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Components
+	- Media
+	- Captions
+	- Blockquote
+# Utilities
+	- Alignments
+	- Bootstrap Custom
+# Customize
+
+--------------------------------------------------------------*/
+
+
+/* Media
+--------------------------------------------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/* Captions
+--------------------------------------------- */
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/* Blockquote
+--------------------------------------------- */
+blockquote {
+	margin: 0 calc(1 * 1.5rem) 1rem !important;
+	font-style: italic;
+}
+
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Alignments
+--------------------------------------------- */
+.alignleft {
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.5em;
+}
+
+/* Bootstrap Custom
+--------------------------------------------- */
+.ratio-3x2 {
+	--bs-aspect-ratio: 66.6666666667%;
+}
+
+/*--------------------------------------------------------------
+# Customize
+--------------------------------------------------------------*/
+.container-fluid {
+	/* max-width: 456px; */
+	max-width: 991.98px;
+}
+
+.article-topic, .article-global, .article-relation, .tougao-user, #diaocha_body, .ab, .bb, .image_desc, figcaption > span {
+	display: none;
+}
+
+.entry-header {
+	padding-right: 0.75rem !important;
+}
+
+.format-video .entry-header, .format-audio .entry-header, .format-chat .entry-header {
+	padding-right: 0 !important;
+}
+
+.format-chat.category-politics .entry-content > figure:first-of-type {
+	display: none;
+}
+
+.format-chat.category-politics .entry-content > figure+h2 {
+	margin-top: 0;
+}
+
+figure .figure-img {
+	margin-bottom: 0;
+}
+
+figure .figure-caption {
+	margin-top: .5rem;
+}
+
+figure .figure-caption+.figure-img {
+	margin-top: 1rem;
+}
+
+.entry-content > p {
+	word-break: break-word;
+}
+
+.entry-content > *:last-child, .page-load-status p {
+	margin-bottom: 0 !important;
+}
+
+.entry-content p > *,  .entry-content blockquote > * {
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+.entry-content p > *:first-child, .entry-content blockquote > *:first-child {
+	margin-top: 0;
+}
+
+h2.entry-title {
+	height: calc(2 * 1.25 * var(--bs-body-font-size));
+	overflow-y: hidden;
+	word-break: break-all;
+}
+
+.entry-content > h2 {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.entry-content > figure+h2 {
+    margin-top: 1rem;
+}
+
+.home article, .archive article {
+	transition: opacity .15s ease-in-out;
+}
+
+.home article:focus, .archive article:focus, .home article:hover, .archive article:hover {
+	opacity: .75;
+}
+
+.entry-content svg {
+    margin: 0;
+}
+
+.single footer {
+	display: none
+}
