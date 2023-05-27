@@ -9,7 +9,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-cnBeta is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+cnBeta is a wordpress theme based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 == Description ==
