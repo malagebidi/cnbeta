@@ -1,10 +1,10 @@
 === cnBeta ===
 
-Tags: custom-logo, featured-images
+Tags: featured-images
 
 Requires at least: 4.5
-Tested up to: 5.4
-Requires PHP: 5.6
+Tested up to: 6.0
+Requires PHP: 7.0
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
