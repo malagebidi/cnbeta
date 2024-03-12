@@ -1,9 +1,9 @@
 === cnBeta ===
 
-Tags: featured-images
+Tags: one-column
 
 Requires at least: 4.5
-Tested up to: 6.0
+Tested up to: 6.4.3
 Requires PHP: 7.0
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
