@@ -25,7 +25,7 @@ Only optimized for smartphone screen size.
 
 == Tip ==
 
-The default thumbnail size specified in function.php is 72x72, as well as 144x144 and 216x216. It is recommended to set the three dimensions in the media size to 444x0, 888x0 and 1332x0, and use plugin to disable other sizes.
+All thumbnail sizes have been set in function.php, just use plugin to disable all other sizes.
 
 == Changelog ==
 
