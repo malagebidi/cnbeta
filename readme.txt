@@ -25,7 +25,7 @@ Only optimized for smartphone screen size.
 
 == Tip ==
 
-All thumbnail sizes have been set in function.php, just use plugin to disable all other sizes.
+All thumbnail sizes have been set in function.php, just use plugin to disable default sizes.
 
 == Changelog ==
 
