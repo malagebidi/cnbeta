@@ -12,7 +12,7 @@
 		
 			<div class="post-thumbnail mb-2">
 				<?php the_post_thumbnail(
-    					'medium',
+    					'full-thumbnail',
     					array(
         					'class' => "w-100 img-fluid rounded",
         					'alt' => the_title_attribute(array('echo' => false))
