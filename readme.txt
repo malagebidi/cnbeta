@@ -14,7 +14,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 == Description ==
 
-Only optimized for smartphone screen size.
+Only optimized for smartphone screen sizes and Chinese language.
 
 == Installation ==
 
