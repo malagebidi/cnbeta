@@ -24,7 +24,7 @@
 			<div class="entry-header">
 
 				<h2 class="entry-title fs-6 lh-sm fw-bold">
-					<a class="text-decoration-none link-dark stretched-link" href="<?php the_permalink(); ?>" rel="bookmark"><?php echo mb_strimwidth( get_the_title(), 0, 85, "...", "utf-8" ); ?></a>
+					<a class="text-decoration-none link-dark stretched-link" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 				</h2>
 
 				<div class="entry-date text-secondary small">
