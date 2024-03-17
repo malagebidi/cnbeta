@@ -162,11 +162,13 @@ figure .figure-caption+.figure-img {
 	margin-top: 0;
 }
 
+/*
 h2.entry-title {
 	height: calc(2 * 1.25 * var(--bs-body-font-size));
 	overflow-y: hidden;
 	word-break: break-all;
 }
+*/
 
 .entry-content > h2 {
 	margin-top: 2rem;
