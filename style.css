@@ -117,20 +117,8 @@ blockquote {
 	display: none;
 }
 
-.entry-header {
+.format-standard .entry-header {
 	padding-right: 0.75rem !important;
-}
-
-.format-video .entry-header, .format-audio .entry-header, .format-chat .entry-header {
-	padding-right: 0 !important;
-}
-
-.format-chat.category-politics .entry-content > figure:first-of-type {
-	display: none;
-}
-
-.format-chat.category-politics .entry-content > figure+h2 {
-	margin-top: 0;
 }
 
 figure .figure-img {
