@@ -61,9 +61,9 @@ add_action( 'after_setup_theme', 'cnbeta_setup' );
 /**
  * Set Image Sizes
  */
-set_post_thumbnail_size( 128, 72, true );
-add_image_size( 'post_2x-thumbnail', 256, 144, true );
-add_image_size( 'post_3x-thumbnail', 384, 216, true );
+set_post_thumbnail_size( 72, 72, true );
+add_image_size( 'post_2x-thumbnail', 144, 144, true );
+add_image_size( 'post_3x-thumbnail', 216, 216, true );
 
 add_image_size( 'full-thumbnail', 444 );
 add_image_size( 'full_2x-thumbnail', 888 );
