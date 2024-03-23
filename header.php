@@ -28,7 +28,7 @@
 	<?php if ( !is_singular() ) : ?>
 	<header id="masthead" class="site-header border-bottom mb-3 ratio ratio-4x3">
 		<div class="site-branding">
-				<h1 class="site-title fw-bold m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="link-body-emphasis text-decoration-none" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title fw-bold m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="link-dark text-decoration-none" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div>
 	</header>
 	<?php endif; ?>
