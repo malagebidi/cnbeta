@@ -16,11 +16,8 @@
 					<a class="text-decoration-none link-dark stretched-link" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 				</h2>
 
-				<div class="entry-date text-secondary small">
-					<?php echo esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) . '前'; ?>
-				</div>
-
-				<div class="entry-category text-secondary small">
+				<div class="entry-meta text-secondary small">
+					<?php echo esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) . ' ago · '; ?>
 					<?php
 						$category = get_the_category();
 						$parent = get_cat_name($category[0]->category_parent);
@@ -44,9 +41,9 @@
    						 )
 					);
 				} elseif ( get_the_author_meta('display_name') == 'cnbeta' && has_excerpt() ) {
-					echo '<img width="72" height="72" class="rounded wp-post-image" alt="cnBeta External Thumbnail" src="' . esc_url(get_the_excerpt()) . '">';
+					echo '<img width="128" height="72" class="rounded wp-post-image" alt="cnBeta External Thumbnail" src="' . esc_url(get_the_excerpt()) . '">';
 				} else {
-					echo '<img width="72" height="72" src="./wp-content/themes/cnbeta/assets/no-thumbnail-72x72.png" class="rounded" alt="Default Thumbnail" srcset="./wp-content/themes/cnbeta/assets/no-thumbnail-72x72.png 72w, ./wp-content/themes/cnbeta/assets/no-thumbnail-144x144.png 144w, ./wp-content/themes/cnbeta/assets/no-thumbnail-216x216.png 216w" sizes="(max-width: 72px) 100vw, 72px">';
+					echo '<picture><source srcset="../wp-content/themes/cnbeta/assets/no-thumbnail-128x72.png 128w, ../wp-content/themes/cnbeta/assets/no-thumbnail-256x144.png 256w, ../wp-content/themes/cnbeta/assets/no-thumbnail-384x216.png 384w" sizes="(max-width: 128px) 100vw, 128px" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)"><source srcset="../wp-content/themes/cnbeta/assets/no-thumbnail-dark-128x72.png 128w, ../wp-content/themes/cnbeta/assets/no-thumbnail-dark-256x144.png 256w, ../wp-content/themes/cnbeta/assets/no-thumbnail-dark-384x216.png 384w" sizes="(max-width: 128px) 100vw, 128px" media="(prefers-color-scheme: dark)"><img width="128" height="72" src="../wp-content/themes/cnbeta/assets/no-thumbnail-128x72.png" class="rounded" alt="Default Thumbnail" srcset="../wp-content/themes/cnbeta/assets/no-thumbnail-128x72.png 128w, ../wp-content/themes/cnbeta/assets/no-thumbnail-256x144.png 256w, ../wp-content/themes/cnbeta/assets/no-thumbnail-384x216.png 384w" sizes="(max-width: 128px) 100vw, 128px"></picture>';
 				}
 				?>
 			</div>

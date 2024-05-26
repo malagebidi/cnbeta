@@ -27,11 +27,8 @@
 					<a class="text-decoration-none link-dark stretched-link" target="_blank" href="<?php echo wp_strip_all_tags(get_the_excerpt()); ?>" rel="bookmark">↗<?php the_title(); ?></a>
 				</h2>
 
-				<div class="entry-date text-secondary small">
-					<?php echo esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) . '前'; ?>
-				</div>
-
-				<div class="entry-category text-secondary small">
+				<div class="entry-meta text-secondary small">
+					<?php echo esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) . ' ago · '; ?>
 					<?php
 						$category = get_the_category();
 						$parent = get_cat_name($category[0]->category_parent);
