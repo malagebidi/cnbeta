@@ -27,6 +27,11 @@ Only optimized for smartphone screen sizes and Chinese language.
 = 1.0 - April 1 2023 =
 * Initial release
 
+= 2.0 - May 25 2024 =
+* Add dark mode
+* The post thumbnail aspect ratio is unified to 16:9
+* Various tweaks
+
 == Credits ==
 
 * Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
