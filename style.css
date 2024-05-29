@@ -102,7 +102,7 @@ blockquote {
 }
 
 .format-standard .entry-title {
-	min-height: calc(3 * 1.25 * var(--bs-body-font-size));
+	min-height: calc(3 * 1.5 * var(--bs-body-font-size));
 }
 
 .entry-content > p {
