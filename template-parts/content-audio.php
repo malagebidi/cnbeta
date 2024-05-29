@@ -23,7 +23,7 @@
 
 			<div class="entry-header">
 
-				<h2 class="entry-title fs-6 lh-sm fw-bold">
+				<h2 class="entry-title fs-6 lh-base fw-bold">
 					<a class="text-decoration-none link-dark stretched-link" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 				</h2>
 
