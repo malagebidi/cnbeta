@@ -54,7 +54,7 @@ Tags: one-column
 /* Blockquote
 --------------------------------------------- */
 blockquote {
-	margin: 0 calc(1 * 1.5rem) 1rem !important;
+	margin: 0 1rem 1rem;
 	font-style: italic;
 }
 
@@ -102,7 +102,24 @@ blockquote {
 }
 
 .format-standard .entry-title {
-	min-height: calc(3 * 1.5 * var(--bs-body-font-size));
+	height: calc(3 * 1.5 * var(--bs-body-font-size));
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+
+.format-video button.play-button {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 84px;
+	height: 100%;
+	transform: translate(-50%, -50%);
+	background: transparent;
+	border: none;
+	fill: #fff;
 }
 
 .entry-content > p {
@@ -131,11 +148,11 @@ blockquote {
     margin-top: 1rem;
 }
 
-.home article, .archive article {
+.home article, .archive article, .home article .play-button, .archive article .play-button {
 	transition: opacity .15s ease-in-out;
 }
 
-.home article:focus, .archive article:focus, .home article:hover, .archive article:hover {
+.home article:focus, .archive article:focus, .home article:hover, .archive article:hover, .home article:focus .play-button, .archive article:focus .play-button, .home article:hover .play-button, .archive article:hover .play-button {
 	opacity: .75;
 }
 
@@ -191,5 +208,9 @@ blockquote {
 
 	.btn {
 		--bs-btn-box-shadow: inset 0 1px 0 rgba(18, 18, 18, 0.15), 0 1px 1px rgba(255, 255, 255, 0.075);
+	}
+
+	.format-video button.play-button {
+		fill: #121212
 	}
 }
