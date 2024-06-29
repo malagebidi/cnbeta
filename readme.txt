@@ -32,6 +32,10 @@ Only optimized for smartphone screen sizes and Chinese language.
 * The post thumbnail aspect ratio is unified to 16:9
 * Various tweaks
 
+= 2.1 - June 28 2024 =
+* Add a play button overlay to featured image of video format
+* Adjust the time display format
+
 == Credits ==
 
 * Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
