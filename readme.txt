@@ -5,7 +5,7 @@ Tags: one-column
 Requires at least: 4.5
 Tested up to: 6.4.3
 Requires PHP: 7.0
-Stable tag: 1.0.0
+Stable tag: 2.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
