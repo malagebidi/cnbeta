@@ -89,3 +89,43 @@ add_filter('next_posts_link_attributes', 'newer_posts');
 function newer_posts() {
     return 'class="next_posts btn btn-dark" role="button"';
 }
+
+
+/**
+ * PWA adaptive icon support.
+ */
+add_filter( 'web_app_manifest', static function ( $manifest ) {
+	$manifest['icons'] = array(
+		array(
+			'src'     => home_url( '/wp-content/themes/cnbeta/favicon-192x192.png' ),
+			'sizes'   => '192x192',
+			'type'    => 'image/png',
+			'purpose' => 'any',
+		),
+		array(
+			'src'     => home_url( '/wp-content/themes/cnbeta/favicon.png' ),
+			'sizes'   => '512x512',
+			'type'    => 'image/png',
+			'purpose' => 'any',
+		),
+	);
+	return $manifest;
+} );
+
+
+/**
+ * PWA install like a standalone app.
+ */
+add_filter( 'web_app_manifest', function( $manifest ) {
+    $manifest['display'] = 'standalone';
+    return $manifest;
+} );
+
+
+/**
+ * PWA unset theme-color.
+ */
+add_filter( 'web_app_manifest', function( $manifest ) {
+    unset( $manifest['theme_color'] );
+    return $manifest;
+} );
