@@ -19,6 +19,10 @@
 	<meta name="referrer" content="never">
 
 	<?php wp_head(); ?>
+	<link rel="icon" href="/wp-content/themes/cnbeta/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" href="/wp-content/themes/cnbeta/favicon-192x192.png" sizes="192x192" />
+	<link rel="apple-touch-icon" href="/wp-content/themes/cnbeta/favicon.png" />
+	<meta name="msapplication-TileImage" content="/wp-content/themes/cnbeta/favicon.png" />
 </head>
 
 <body <?php body_class(); ?>>
