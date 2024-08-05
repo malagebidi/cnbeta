@@ -35,7 +35,7 @@ function cnbeta_setup() {
 		* A Post Format is a piece of meta information
 		* that can be used by a theme to customize its presentation of a post.
 		*/
-	add_theme_support( 'post-formats', array( 'video', 'audio', 'link' ) );
+	add_theme_support( 'post-formats', array( 'video', 'link' ) );
 
 	/*
 		* Switch default core markup for search form, comment form, and comments
