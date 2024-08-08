@@ -24,7 +24,7 @@
 			<div class="entry-header">
 
 				<h2 class="entry-title fs-6 lh-base fw-bold mb-1">
-					<a class="text-decoration-none link-dark stretched-link" target="_blank" href="<?php echo wp_strip_all_tags(get_the_excerpt()); ?>" rel="bookmark">↗<?php the_title(); ?></a>
+					<a class="text-decoration-none link-dark stretched-link" target="_blank" href="<?php echo wp_strip_all_tags(get_the_excerpt()); ?>" rel="bookmark"><?php the_title(); ?></a>
 				</h2>
 
 				<div class="entry-meta text-secondary small">
