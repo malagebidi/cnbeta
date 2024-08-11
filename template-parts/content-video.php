@@ -33,12 +33,16 @@
 
 				<div class="entry-meta text-secondary small">
 					<?php
-						$date = get_the_time();
+						$excerpt = has_excerpt() ? get_the_excerpt() : '';
 						$category = get_the_category();
-						$parent = get_cat_name($category[0]->category_parent);
-						$category_output = !empty($parent) ? $parent . ' > ' . $category[0]->cat_name : $category[0]->cat_name;
+						$cat_output = ($parent = get_cat_name($category[0]->category_parent)) ? "$parent > {$category[0]->cat_name}" : $category[0]->cat_name;
 
-						echo $date . ' · ' . $category_output;
+						if ($excerpt) {
+							echo "<span class='entry-excerpt text-decoration-underline'>$excerpt</span>";
+						} else {
+							echo "<span class='entry-time'>" . get_the_time() . "</span>";
+						}
+						echo " · <span class='entry-category'>$cat_output</span>";
 					?>
 				</div>
 
